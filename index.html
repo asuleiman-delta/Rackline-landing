@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Rackline — Fabricación nacional de racks industriales con norma asísmica certificada</title>
+<title>Rackline — Fabricación nacional de racks industriales con normas sísmicas certificadas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -457,6 +457,15 @@
   .seismic-stamp-text{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.7)}
   .seismic-stamp-text strong{display:block;color:#fff;font-size:13px;letter-spacing:0;text-transform:none;margin-top:1px}
 
+  .seismic-badge{
+    position:absolute;left:20px;bottom:84px;
+    width:128px;height:128px;
+    display:flex;align-items:center;justify-content:center;
+    filter:drop-shadow(0 8px 16px rgba(0,0,0,.45));
+  }
+  .seismic-badge img{width:100%;height:100%;object-fit:contain}
+  @media (max-width:640px){.seismic-badge{width:100px;height:100px;bottom:78px;left:16px}}
+
   .seismic-meta{
     position:absolute;bottom:20px;left:20px;right:20px;
     display:flex;justify-content:space-between;align-items:flex-end;color:#fff;
@@ -714,7 +723,7 @@
     </a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#soluciones">Soluciones</a>
-      <a href="#asismica">Norma asísmica</a>
+      <a href="#asismica">Norma Sísmica</a>
       <a href="#servicios">Servicios</a>
       <a href="#proceso">Proceso</a>
     </nav>
@@ -741,8 +750,8 @@
 
     <div>
       <span class="hero-eyebrow"><span class="dot"></span>Fabricación nacional · NCh 2369 certificada</span>
-      <h1 class="hero-title">Fabricación nacional de racks industriales con <em>norma asísmica certificada</em>.</h1>
-      <p class="hero-sub">Diseñamos, fabricamos e instalamos soluciones de almacenaje de alta resiliencia para optimizar la capacidad logística de tu empresa. Stock permanente para entrega inmediata.</p>
+      <h1 class="hero-title">Fabricación nacional de racks industriales con <em>normas sísmicas certificadas</em>.</h1>
+      <p class="hero-sub">Diseñamos, fabricamos e instalamos soluciones de almacenaje de alta resiliencia para optimizar la capacidad logística de tu empresa.</p>
 
       <div class="hero-trust">
         <div class="hero-trust-item">
@@ -780,7 +789,7 @@
       <div class="form-header">
         <span class="form-badge">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.3L2 9.2h7.6z"/></svg>
-          Cotización con ingeniero
+          Cotización con ingeniero de proyecto
         </span>
         <h2 class="form-title" id="form-title">Cotiza tu proyecto en 24 hs</h2>
         <p class="form-sub">Recibe asesoría técnica directa de fábrica. Sin intermediarios.</p>
@@ -792,17 +801,13 @@
           <input type="text" name="nombre" placeholder="Ej. Juan Pérez" required />
         </label>
 
-        <label class="fld form-row half">
+        <label class="fld form-row">
           <span>Nombre de la empresa <span class="req">*</span></span>
           <input type="text" name="empresa" placeholder="Ej. Logística del Sur SpA" required />
         </label>
 
         <label class="fld form-row half">
-          <span>RUT empresa <span class="req">*</span></span>
-          <input type="text" name="rut" placeholder="76.123.456-7" required pattern="[0-9kK\.\-]+" /></label>
-
-        <label class="fld form-row half">
-          <span>Correo corporativo <span class="req">*</span></span>
+          <span>Correo <span class="req">*</span></span>
           <input type="email" name="email" placeholder="nombre@empresa.cl" required />
         </label>
 
@@ -892,7 +897,7 @@
     <div class="section-head">
       <span class="section-eyebrow">Ingeniería que respalda</span>
       <h2 class="section-title">Tres pilares que validan cada metro lineal que fabricamos</h2>
-      <p class="section-sub">No revendemos: somos la fábrica. Cada estructura sale calculada, certificada y lista para operar bajo las exigencias logísticas del mercado chileno.</p>
+      <p class="section-sub">No revendemos: somos la fábrica. Cada estructura sale calculada, certificada y lista para operar bajo las exigencias de tu negocio.</p>
     </div>
 
     <div class="pilares-grid">
@@ -908,8 +913,8 @@
         <div class="pilar-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
         </div>
-        <h3>Entrega inmediata</h3>
-        <p>Stock permanente de selectivos, mini-racks y estanterías estándar. Empieza a paletizar dentro de la misma semana de pedido.</p>
+        <h3>Plazos eficientes</h3>
+        <p>Contamos con los tiempos de fabricación más ágiles del mercado para racks y estanterías estándar, junto con plazos reducidos en proyectos a medida. Optimiza tu operación logística sin esperas innecesarias.</p>
       </div>
 
       <div class="pilar">
@@ -929,17 +934,38 @@
     <div class="section-head">
       <span class="section-eyebrow">Catálogo industrial</span>
       <h2 class="section-title">Soluciones integrales de almacenaje</h2>
-      <p class="section-sub">Desde paletización selectiva hasta altillos de gran envergadura. Toda nuestra línea cumple con la normativa asísmica chilena.</p>
+      <p class="section-sub">Desde paletización selectiva hasta altillos de gran envergadura. Toda nuestra línea cumple con la normativa sísmica chilena.</p>
     </div>
 
     <div class="sol-grid">
 
       <a class="sol-card" href="#cotizar">
         <div class="sol-media">
-          <img src="assets/selective.jpg" alt="Rack selectivo Porcelanosa" />
+          <img src="assets/mini-rack.jpeg" alt="Mini-rack El Taller" />
           <div class="sol-badges">
             <span class="badge entrega"><span class="dot"></span>Entrega inmediata</span>
           </div>
+        </div>
+        <div class="sol-body">
+          <h3 class="sol-title">Mini-Rack &amp; Estanterías</h3>
+          <p class="sol-desc">Carga manual o picking dinámico para repuestos, retail y operaciones de e-commerce. Modular, atornillable y reconfigurable.</p>
+          <div class="sol-specs">
+            <span class="spec">150–800 kg/nivel</span>
+            <span class="spec">MDF · acero</span>
+          </div>
+          <span class="sol-link">Cotizar ficha técnica
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          <div class="sol-seismic-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.3L2 9.2h7.6z"/></svg>
+            SEISMIC BADGE · NCh 2369
+          </div>
+        </div>
+      </a>
+
+      <a class="sol-card" href="#cotizar">
+        <div class="sol-media">
+          <img src="assets/selective.jpg" alt="Rack selectivo Porcelanosa" />
         </div>
         <div class="sol-body">
           <h3 class="sol-title">Rack Selectivo</h3>
@@ -1054,25 +1080,6 @@
         </div>
       </a>
 
-      <a class="sol-card" href="#cotizar">
-        <div class="sol-media">
-          <img src="assets/mini-rack.jpeg" alt="Mini-rack El Taller" />
-          <div class="sol-badges">
-            <span class="badge entrega"><span class="dot"></span>Entrega inmediata</span>
-          </div>
-        </div>
-        <div class="sol-body">
-          <h3 class="sol-title">Mini-Rack &amp; Estanterías</h3>
-          <p class="sol-desc">Carga manual o picking dinámico para repuestos, retail y operaciones de e-commerce. Modular, atornillable y reconfigurable.</p>
-          <div class="sol-specs">
-            <span class="spec">150–800 kg/nivel</span>
-            <span class="spec">MDF · acero</span>
-          </div>
-          <span class="sol-link">Cotizar ficha técnica
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </span>
-          <div class="sol-seismic-tag">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.3L2 9.2h7.6z"/></svg>
             SEISMIC BADGE · NCh 2369
           </div>
         </div>
@@ -1088,7 +1095,7 @@
     <div>
       <span class="seismic-eyebrow">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.3L2 9.2h7.6z"/></svg>
-        Ingeniería asísmica avanzada
+        Ingeniería sísmica avanzada
       </span>
       <h2>Bodegas que <span>siguen operando</span> después del evento sísmico.</h2>
       <p class="seismic-text">En Chile, el diseño estructural no es una opción: es una necesidad de supervivencia empresarial. Implementamos sistemas con anclaje base, distanciadores, refuerzos diagonales y arriostramiento certificado bajo <strong style="color:#fff;font-weight:600">NCh 2369.Of2003</strong> — garantizando que tu operación no se detenga ante eventos sísmicos de gran magnitud.</p>
@@ -1136,6 +1143,9 @@
     <div class="seismic-visual">
       <img src="assets/factory-1.jpeg" alt="Centro de distribución Kolff equipado por Rackline" />
       <div class="seismic-overlay" aria-hidden="true"></div>
+      <div class="seismic-badge">
+        <img src="assets/nch2369.png" alt="Certificación Norma Chilena NCh2369 — Diseño sísmico de estructuras" />
+      </div>
       <div class="seismic-stamp">
         <div class="seismic-stamp-circle">NCh</div>
         <div>
@@ -1345,7 +1355,7 @@
     <div class="foot-grid">
       <div class="foot-brand">
         <img src="assets/logo-rackline.png" alt="Rackline" />
-        <p>Soluciones integrales de almacenaje industrial de alta resiliencia y diseño asísmico avanzado para el mercado chileno.</p>
+        <p>Soluciones integrales de almacenaje industrial de alta resiliencia y diseño sísmico avanzado para el mercado chileno.</p>
       </div>
 
       <div class="foot-col">
